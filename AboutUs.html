@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tech Talk Titans - Welcome</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #000;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #001f3f;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 01px;
+      z-index: 1001;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    #menu-toggle {
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Navigation Menu */
+    nav {
+      position: fixed;
+      top: 60px;
+      right: 0;
+      width: 250px;
+      height: 100vh;
+      background-color: #001f3f;
+      display: none;
+      flex-direction: column;
+      padding: 01px;
+      box-shadow: -2px 0 8px rgba(0,0,0,0.5);
+      z-index: 1000;
+      overflow-y:;
+    }
+
+    nav.show {
+      display: flex;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Welcome Section */
+    main {
+      padding-top: 80px;
+    }
+
+    #welcome {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    #welcome h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    #welcome p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 20px auto;
+    }
+
+    .welcome-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .welcome-images img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #ffffff;
+      margin: 0 10px;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="logo.png" alt="Tech Talk Titans" />
+    <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      &#9776;
+    </button>
+  </header>
+
+  <!-- Nav Menu -->
+  <nav id="nav-menu">
+    <a href="index.html#welcome">Home</a>
+    <a href="OurCourses.html#courses">Our Courses</a>
+    <a href="Products.html#products">Products</a>
+    <a href="Projects.html#projects">Our Projects</a>
+    <a href="AboutUs.html#about">About Us</a>
+    <a href="ContactUs.html#contact">Contact Us</a>
+    <a href="TermsConditions.html#terms">Terms & Conditions</a>
+    <a href="PrivacyPolicy.html#privacy">Privacy Policy</a>
+    <a href="RefundCancellation.html#refund">Refund & Cancellation</a>
+    <a href="DeliveryContinuity.html#delivery">Delivery & Continuity</a>
+    <a href="Career.html#career">Career</a>
+  </nav>
+
+  <!-- Welcome Section -->
+  <main>
+    <div id="welcome">
+       <h2>About Us</h2>
+    <p>
+      At <strong>Tech Talk Titans</strong>, we are on a mission to <strong>empower businesses and individuals</strong> through technology, innovation, and skill development.
+      Founded by a team of passionate tech enthusiasts and educators, we bridge the gap between <strong>cutting-edge technology</strong> and <strong>real-world applications</strong>.
+    </p>
+
+    <h3 style="margin-top: 30px; color: #34495e;">🚀 Who We Are</h3>
+    <p style="font-size: 18px; line-height: 1.6; color: #333;">
+      We are a <strong>technology-driven company</strong> based in India, specializing in:
+    </p>
+    <ul style="font-size: 18px; color: #333; line-height: 1.6;">
+      <li>SaaS solutions like CRM, ERP, and business automation tools.</li>
+      <li>AI & ML development tailored for modern enterprises.</li>
+      <li>Online tech education with intensive app and web development courses.</li>
+    </ul>
+
+    <h3 style="margin-top: 30px; color: #34495e;">💼 What We Offer</h3>
+    <ul style="font-size: 18px; color: #333; line-height: 1.6;">
+      <li><strong>Custom App & Web Development</strong>: Scalable and modern solutions for startups and businesses.</li>
+      <li><strong>Live Online Courses</strong>: Daily classes taught by real developers with real-world expertise.</li>
+      <li><strong>1-on-1 Mentorship & Consultation</strong>: Personalized guidance for your tech ideas or career.</li>
+      <li><strong>Affordable Pricing</strong>: World-class tech education and services made accessible.</li>
+    </ul>
+
+    <h3 style="margin-top: 30px; color: #34495e;">🎯 Our Vision</h3>
+    <p style="font-size: 18px; line-height: 1.6; color: #333;">
+      To become a leading platform where <strong>technology meets transformation</strong>—delivering reliable services and education that drive success.
+    </p>
+
+    <h3 style="margin-top: 30px; color: #34495e;">🔐 Our Values</h3>
+    <ul style="font-size: 18px; color: #333; line-height: 1.6;">
+      <li>Transparency & Trust</li>
+      <li>Hands-on Learning</li>
+      <li>Client-Centric Solutions</li>
+      <li>Zero Fake Promises—Only Real Results</li>
+    </ul>
+
+    <h3 style="margin-top: 30px; color: #34495e;">📞 Let's Build Together</h3>
+    <p style="font-size: 18px; line-height: 1.6; color: #333;">
+      We’re not just another tech company—we’re your <strong>long-term tech ally</strong>. Whether you need a product built, skills sharpened, or your idea brought to life, Tech Talk Titans is here to help.
+    </p>
+    <p style="font-size: 18px; line-height: 1.6; color: #333;">
+      👉 Got a question or want to collaborate? <a href="https://wa.me/message/TWC7NVJMZLSAB1" target="_blank" style="color: #007bff;">Contact us</a> via WhatsApp, we'll love to hear from you.
+    </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tech Talk Titans. All rights reserved.</p>
+    <a href="TermsConditions.html#terms">Terms & Conditions</a> |
+    <a href="PrivacyPolicy.html#privacy">Privacy Policy</a> |
+    <a href="RefundCancellation.html#refund">Refund & Cancellation</a>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', !expanded);
+      navMenu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
