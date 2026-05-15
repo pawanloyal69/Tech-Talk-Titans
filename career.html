@@ -37,49 +37,79 @@
 
   <!-- HEADER -->
 
-  <header class="sticky top-0 left-0 w-full z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
+  <header class="sticky top-0 left-0 w-full z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
 
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
 
-      <a href="index.html" class="flex items-center gap-4">
+    <!-- LOGO -->
 
-  <img
-    src="logo.png"
-    alt="Tech Talk Titans Logo"
-    class="w-12 h-12 rounded-2xl object-cover"
-  >
+    <a href="index.html" class="flex items-center gap-3">
 
-  <div>
-    <h1 class="text-2xl font-bold">
-      Tech Talk Titans
-    </h1>
-
-    <p class="text-xs uppercase tracking-[0.3em] text-white/50">
-      SaaS & IT Solutions
-    </p>
-  </div>
-
-</a>
-
-      <nav class="hidden md:flex items-center gap-8 text-white/70">
-        <a href="index.html#about" class="hover:text-white transition">Home</a>
-        <a href="index.html#products" class="hover:text-white transition">Our Products</a>
-        <a href="index.html#services" class="hover:text-white transition">Services</a>
-        <a href="career.html" class="text-white">Career</a>
-        <a href="index.html#contact" class="hover:text-white transition">Contact Us</a>
-      </nav>
-
-      <a
-        href="mailto:business@techtalktitans.co.in"
-        class="hidden md:inline-block px-5 py-2 rounded-full bg-white text-black font-semibold hover:scale-105 transition"
+      <img
+        src="logo.png"
+        alt="Tech Talk Titans Logo"
+        class="w-10 h-10 md:w-12 md:h-12 rounded-2xl object-cover"
       >
-        Start Project
+
+      <div>
+        <h1 class="text-lg md:text-2xl font-bold">
+          Tech Talk Titans
+        </h1>
+
+        <p class="text-[10px] md:text-xs uppercase tracking-[0.25em] text-white/50">
+          SaaS & IT Solutions
+        </p>
+      </div>
+
+    </a>
+
+    <!-- DESKTOP MENU -->
+
+    <nav class="hidden lg:flex items-center gap-8 text-white/70">
+
+      <a href="index.html#about" class="hover:text-white transition">
+        About
       </a>
 
-    </div>
+      <a href="index.html#products" class="hover:text-white transition">
+        Products
+      </a>
 
-  </header>
+      <a href="index.html#services" class="hover:text-white transition">
+        Services
+      </a>
 
+      <a href="career.html" class="hover:text-white transition">
+        Career
+      </a>
+
+      <a href="index.html#contact" class="hover:text-white transition">
+        Contact
+      </a>
+
+    </nav>
+
+    <!-- MOBILE BUTTON -->
+
+    <a
+      href="index.html#contact"
+      class="px-4 py-2 text-sm rounded-xl bg-white text-black font-semibold lg:hidden"
+    >
+      Contact
+    </a>
+
+    <!-- DESKTOP BUTTON -->
+
+    <a
+      href="mailto:business@techtalktitans.co.in"
+      class="hidden lg:inline-block px-5 py-2 rounded-full bg-white text-black font-semibold hover:scale-105 transition"
+    >
+      Start Project
+    </a>
+
+  </div>
+
+</header>
   <!-- HERO -->
 
   <section class="pt-28 pb-20 px-6">
