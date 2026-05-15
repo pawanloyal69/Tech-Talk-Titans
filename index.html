@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tech Talk Titans | SaaS & IT Solutions</title>
+
+  <meta
+    name="description"
+    content="Tech Talk Titans builds SaaS products, AI systems, communication platforms, and modern cloud applications."
+  />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #020617;
+      color: white;
+      overflow-x: hidden;
+      font-family: Inter, sans-serif;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(18px);
+    }
+
+    .gradient-text {
+      background: linear-gradient(to right, #38bdf8, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glow {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 9999px;
+      filter: blur(120px);
+      opacity: 0.18;
+      z-index: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- BACKGROUND -->
+
+  <div class="glow bg-cyan-500 top-0 left-0"></div>
+  <div class="glow bg-purple-500 bottom-0 right-0"></div>
+
+  <!-- HEADER -->
+
+  <header class="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
+
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <a href="index.html">
+        <h1 class="text-2xl font-bold">Tech Talk Titans</h1>
+        <p class="text-xs uppercase tracking-[0.3em] text-white/50">
+          SaaS & IT Solutions
+        </p>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-white/70">
+        <a href="#about" class="hover:text-white transition">About Us</a>
+        <a href="#products" class="hover:text-white transition">Our Products</a>
+        <a href="#services" class="hover:text-white transition">Services</a>
+        <a href="career.html" class="hover:text-white transition">Career</a>
+        <a href="#contact" class="hover:text-white transition">Contact Us</a>
+      </nav>
+
+      <a
+        href="mailto:hello@techtalktitans.co.in"
+        class="hidden md:inline-block px-5 py-2 rounded-full bg-white text-black font-semibold hover:scale-105 transition"
+      >
+        Start Project
+      </a>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+
+  <section class="relative pt-40 pb-32 px-6 z-10">
+
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+
+      <div>
+
+        <div class="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8">
+          <div class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
+          <span class="text-sm text-white/70">
+            Building scalable SaaS ecosystems
+          </span>
+        </div>
+
+        <h2 class="text-5xl md:text-7xl font-black leading-tight">
+          Building the Future of
+          <span class="gradient-text">SaaS & IT</span>
+        </h2>
+
+        <p class="mt-8 text-lg text-white/60 leading-relaxed max-w-2xl">
+          Tech Talk Titans is a SaaS-first technology company focused on scalable digital products, cloud communication systems, AI-powered tools, and enterprise-grade software solutions.
+        </p>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+
+          <a
+            href="#products"
+            class="px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-purple-500 font-semibold hover:scale-105 transition"
+          >
+            Explore Products
+          </a>
+
+          <a
+            href="mailto:hello@techtalktitans.co.in"
+            class="glass px-8 py-4 rounded-2xl hover:bg-white/10 transition"
+          >
+            Book Consultation
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT CARD -->
+
+      <div class="glass rounded-[32px] p-8 shadow-2xl">
+
+        <div class="flex justify-between items-center mb-8">
+
+          <div>
+            <p class="text-white/50 text-sm">Technology Ecosystem</p>
+            <h3 class="text-3xl font-bold mt-1">3T Platform Suite</h3>
+          </div>
+
+          <div class="px-4 py-2 rounded-full bg-yellow-500/20 text-yellow-300 text-sm border border-yellow-500/20">
+            Coming Soon
+          </div>
+
+        </div>
+
+        <div class="space-y-5">
+
+          <div class="glass rounded-2xl p-5 hover:bg-white/10 transition">
+            <h4 class="text-xl font-bold mb-3">3T Dial</h4>
+            <p class="text-white/60 leading-relaxed">
+              Virtual numbers, second line, calling, SMS, APK, EXE, and browser-based communication platform.
+            </p>
+          </div>
+
+          <div class="glass rounded-2xl p-5 hover:bg-white/10 transition">
+            <h4 class="text-xl font-bold mb-3">3T Mail</h4>
+            <p class="text-white/60 leading-relaxed">
+              Personal email, professional email hosting, and bulk mailing services.
+            </p>
+          </div>
+
+          <div class="glass rounded-2xl p-5 hover:bg-white/10 transition">
+            <h4 class="text-xl font-bold mb-3">3T eSIM</h4>
+            <p class="text-white/60 leading-relaxed">
+              International eSIM services across 25+ countries for travelers.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about" class="py-28 px-6 relative z-10">
+
+    <div class="max-w-7xl mx-auto glass rounded-[36px] p-10 md:p-16">
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        <div>
+          <p class="uppercase tracking-[0.3em] text-cyan-400 text-sm mb-4">
+            About Us
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+            A Modern SaaS & Technology Company
+          </h2>
+        </div>
+
+        <div>
+          <p class="text-white/65 text-lg leading-relaxed">
+            Tech Talk Titans builds scalable SaaS products, communication systems, AI platforms, cloud infrastructure, and enterprise software ecosystems designed for global users and businesses.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PRODUCTS -->
+
+  <section id="products" class="py-28 px-6 relative z-10">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="max-w-3xl mb-16">
+
+        <p class="uppercase tracking-[0.3em] text-cyan-400 text-sm mb-4">
+          Our Products
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+          SaaS Products Under Tech Talk Titans
+        </h2>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="glass rounded-[28px] p-8 hover:bg-white/10 transition">
+
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-2xl font-bold">3T Dial</h3>
+            <span class="text-xs px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-300">
+              Coming Soon
+            </span>
+          </div>
+
+          <p class="text-white/60 leading-relaxed">
+            Calling, SMS, second line, APK, EXE, and browser communication system.
+          </p>
+
+        </div>
+
+        <div class="glass rounded-[28px] p-8 hover:bg-white/10 transition">
+
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-2xl font-bold">3T Mail</h3>
+            <span class="text-xs px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-300">
+              Coming Soon
+            </span>
+          </div>
+
+          <p class="text-white/60 leading-relaxed">
+            Personal email, professional email hosting, and bulk mailing ecosystem.
+          </p>
+
+        </div>
+
+        <div class="glass rounded-[28px] p-8 hover:bg-white/10 transition">
+
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-2xl font-bold">3T eSIM</h3>
+            <span class="text-xs px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-300">
+              Coming Soon
+            </span>
+          </div>
+
+          <p class="text-white/60 leading-relaxed">
+            International eSIM services for global connectivity across 25+ countries.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+
+  <section id="services" class="py-28 px-6 relative z-10">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="max-w-3xl mb-16">
+
+        <p class="uppercase tracking-[0.3em] text-purple-400 text-sm mb-4">
+          Services
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+          High-End Software & IT Solutions
+        </h2>
+
+      </div>
+
+      <div class="grid gap-5">
+
+        <div class="glass rounded-2xl p-6 hover:bg-white/10 transition">
+          <h3 class="text-xl font-semibold">SaaS Product Development</h3>
+          <p class="text-white/50 mt-2">
+            Subscription platforms, dashboards, scalable SaaS systems.
+          </p>
+        </div>
+
+        <div class="glass rounded-2xl p-6 hover:bg-white/10 transition">
+          <h3 class="text-xl font-semibold">Custom Web Applications</h3>
+          <p class="text-white/50 mt-2">
+            Modern frontend and backend systems for businesses.
+          </p>
+        </div>
+
+        <div class="glass rounded-2xl p-6 hover:bg-white/10 transition">
+          <h3 class="text-xl font-semibold">AI Integrations & Automation</h3>
+          <p class="text-white/50 mt-2">
+            AI-powered systems, workflows, and automation pipelines.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT SECTION -->
+
+  <section id="contact" class="py-28 px-6 relative z-10">
+
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
+
+      <div>
+
+        <p class="uppercase tracking-[0.3em] text-cyan-400 text-sm mb-4">
+          Contact Us
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-8">
+          Let’s Build Something Amazing Together
+        </h2>
+
+        <p class="text-white/60 text-lg leading-relaxed mb-10">
+          Contact Tech Talk Titans for SaaS solutions, IT services, software projects, collaborations, and technology partnerships.
+        </p>
+
+        <div class="space-y-6">
+
+          <div class="glass rounded-2xl p-6">
+            <p class="text-white font-semibold mb-2">Support</p>
+            <a href="mailto:support@techtalktitans.co.in" class="text-white/60 hover:text-white transition">
+              support@techtalktitans.co.in
+            </a>
+          </div>
+
+          <div class="glass rounded-2xl p-6">
+            <p class="text-white font-semibold mb-2">Business, Collaboration & Partnerships</p>
+            <a href="mailto:bussiness@techtalktitans.co.in" class="text-white/60 hover:text-white transition">
+              bussiness@techtalktitans.co.in
+            </a>
+          </div>
+
+          <div class="glass rounded-2xl p-6">
+            <p class="text-white font-semibold mb-2">Sales & New IT Project Offers</p>
+            <a href="mailto:sales@techtalktitans.co.in" class="text-white/60 hover:text-white transition">
+              sales@techtalktitans.co.in
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CALLBACK FORM -->
+
+      <div class="glass rounded-[32px] p-8 md:p-10">
+
+        <h3 class="text-3xl font-bold mb-8">
+          Get a Call Back
+        </h3>
+
+        <form class="space-y-6">
+
+          <div>
+            <label class="block text-white/70 mb-3">Full Name</label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 outline-none focus:border-cyan-400"
+            />
+          </div>
+
+          <div>
+            <label class="block text-white/70 mb-3">Email Address</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 outline-none focus:border-cyan-400"
+            />
+          </div>
+
+          <div>
+            <label class="block text-white/70 mb-3">Phone Number</label>
+            <input
+              type="tel"
+              placeholder="Enter your phone number"
+              class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 outline-none focus:border-cyan-400"
+            />
+          </div>
+
+          <div>
+            <label class="block text-white/70 mb-3">Project Requirement</label>
+            <textarea
+              rows="5"
+              placeholder="Tell us about your project"
+              class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 outline-none focus:border-cyan-400"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-purple-500 font-semibold hover:scale-[1.02] transition"
+          >
+            Request Call Back
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer id="contact" class="border-t border-white/10 bg-slate-950/60 backdrop-blur-xl py-14 px-6 relative z-10">
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+
+      <div>
+
+        <h3 class="text-2xl font-bold">Tech Talk Titans</h3>
+
+        <p class="mt-4 text-white/50 leading-relaxed">
+          SaaS-first technology company building scalable digital products and intelligent software ecosystems.
+        </p>
+
+        <div class="mt-6 space-y-4 text-white/60">
+
+          <div>
+            <p class="text-white font-medium">Support</p>
+            <a href="mailto:support@techtalktitans.co.in" class="hover:text-white transition">
+              support@techtalktitans.co.in
+            </a>
+          </div>
+
+          <div>
+            <p class="text-white font-medium">Business & Collaboration</p>
+            <a href="mailto:bussiness@techtalktitans.co.in" class="hover:text-white transition">
+              bussiness@techtalktitans.co.in
+            </a>
+          </div>
+
+          <div>
+            <p class="text-white font-medium">Sales & IT Project Offers</p>
+            <a href="mailto:sales@techtalktitans.co.in" class="hover:text-white transition">
+              sales@techtalktitans.co.in
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <h4 class="font-semibold mb-5">Quick Links</h4>
+
+        <div class="space-y-3 text-white/60">
+          <a href="#about" class="block hover:text-white transition">About Us</a>
+          <a href="#products" class="block hover:text-white transition">Our Products</a>
+          <a href="#services" class="block hover:text-white transition">Services</a>
+          <a href="career.html" class="block hover:text-white transition">Career</a>
+        </div>
+
+      </div>
+
+      <div>
+
+        <h4 class="font-semibold mb-5">Legal</h4>
+
+        <div class="space-y-3 text-white/60">
+          <a href="terms.html" class="block hover:text-white transition">Terms & Conditions</a>
+          <a href="privacy.html" class="block hover:text-white transition">Privacy Policy</a>
+          <a href="refund.html" class="block hover:text-white transition">Refund Policy</a>
+          <a href="availability.html" class="block hover:text-white transition">Service Availability</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="border-t border-white/10 mt-10 pt-6 text-center text-white/40 text-sm">
+      © 2026 Tech Talk Titans. All rights reserved.
+    </div>
+
+  </footer>
+
+</body>
+</html>
