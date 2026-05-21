@@ -1,23 +1,23 @@
 <header class="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
 
-  <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
 
     <!-- LOGO -->
 
-    <a href="index.html" class="flex items-center gap-3 min-w-0">
+    <a href="index.html" class="flex items-center gap-3">
 
       <img
         src="logo.png"
         alt="Tech Talk Titans Logo"
-        class="w-10 h-10 md:w-12 md:h-12 rounded-2xl object-cover shrink-0"
+        class="w-10 h-10 md:w-12 md:h-12 rounded-2xl object-cover"
       >
 
-      <div class="min-w-0">
-        <h1 class="text-base sm:text-lg md:text-2xl font-bold leading-tight truncate">
+      <div>
+        <h1 class="text-lg md:text-2xl font-bold leading-tight">
           Tech Talk Titans
         </h1>
 
-        <p class="text-[9px] sm:text-[10px] md:text-xs uppercase tracking-[0.2em] text-white/50 truncate">
+        <p class="text-[10px] md:text-xs uppercase tracking-[0.25em] text-white/50">
           SaaS & IT Solutions
         </p>
       </div>
@@ -26,10 +26,10 @@
 
     <!-- DESKTOP MENU -->
 
-    <nav class="hidden lg:flex items-center gap-8 text-white/70">
+    <nav class="hidden md:flex items-center gap-8 text-white/70">
 
       <a href="index.html#about" class="hover:text-white transition">
-        About
+        Home
       </a>
 
       <a href="index.html#products" class="hover:text-white transition">
@@ -50,48 +50,58 @@
 
     </nav>
 
-    <!-- MOBILE BUTTON -->
-
-    <button
-      id="menu-btn"
-      class="lg:hidden glass px-4 py-2 rounded-xl"
-    >
-      ☰
-    </button>
-
-    <!-- DESKTOP CTA -->
+    <!-- DESKTOP BUTTON -->
 
     <a
       href="mailto:business@techtalktitans.co.in"
-      class="hidden lg:inline-block px-5 py-2 rounded-full bg-white text-black font-semibold hover:scale-105 transition"
+      class="hidden md:inline-block px-5 py-2 rounded-full bg-white text-black font-semibold hover:scale-105 transition"
     >
       Start Project
     </a>
+
+    <!-- MOBILE MENU BUTTON -->
+
+    <button
+      id="menuBtn"
+      class="md:hidden text-white text-3xl"
+    >
+      ☰
+    </button>
 
   </div>
 
   <!-- MOBILE MENU -->
 
   <div
-    id="mobile-menu"
-    class="hidden lg:hidden border-t border-white/10 bg-slate-950/95"
+    id="mobileMenu"
+    class="hidden md:hidden border-t border-white/10 bg-slate-950/95 backdrop-blur-xl"
   >
 
-    <div class="px-6 py-6 flex flex-col gap-5 text-white/80">
+    <div class="flex flex-col px-6 py-6 space-y-5 text-white/80">
 
-      <a href="index.html#about">About Us</a>
+      <a href="index.html#about" class="hover:text-white transition">
+        Home
+      </a>
 
-      <a href="index.html#products">Our Products</a>
+      <a href="index.html#products" class="hover:text-white transition">
+        Products
+      </a>
 
-      <a href="index.html#services">Services</a>
+      <a href="index.html#services" class="hover:text-white transition">
+        Services
+      </a>
 
-      <a href="career.html">Career</a>
+      <a href="career.html" class="hover:text-white transition">
+        Career
+      </a>
 
-      <a href="index.html#contact">Contact Us</a>
+      <a href="index.html#contact" class="hover:text-white transition">
+        Contact
+      </a>
 
       <a
         href="mailto:business@techtalktitans.co.in"
-        class="mt-2 text-center py-3 rounded-2xl bg-white text-black font-semibold"
+        class="mt-2 text-center px-5 py-3 rounded-2xl bg-white text-black font-semibold"
       >
         Start Project
       </a>
@@ -104,11 +114,18 @@
 
 <script>
 
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
+document.addEventListener("DOMContentLoaded", () => {
 
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
+  const menuBtn = document.getElementById("menuBtn");
+
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+
+    mobileMenu.classList.toggle("hidden");
+
   });
+
+});
 
 </script>
