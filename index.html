@@ -49,64 +49,35 @@
       opacity: 0.18;
       z-index: 0;
     }
+    *{
+  box-sizing:border-box;
+  -webkit-tap-highlight-color:transparent;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+body{
+  overflow-x:hidden;
+}
   </style>
 </head>
 
 <body>
+
+  <div id="header"></div>
 
   <!-- BACKGROUND -->
 
   <div class="glow bg-cyan-500 top-0 left-0"></div>
   <div class="glow bg-purple-500 bottom-0 right-0"></div>
 
-  <!-- HEADER -->
-
-  <header class="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
-
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-
-      <a href="index.html" class="flex items-center gap-4">
-
-  <img
-    src="logo.png"
-    alt="Tech Talk Titans Logo"
-    class="w-12 h-12 rounded-2xl object-cover"
-  >
-
-  <div>
-    <h1 class="text-2xl font-bold">
-      Tech Talk Titans
-    </h1>
-
-    <p class="text-xs uppercase tracking-[0.3em] text-white/50">
-      SaaS & IT Solutions
-    </p>
-  </div>
-
-</a>
-
-      <nav class="hidden md:flex items-center gap-8 text-white/70">
-        <a href="#about" class="hover:text-white transition">Home</a>
-        <a href="#products" class="hover:text-white transition">Our Products</a>
-        <a href="#services" class="hover:text-white transition">Services</a>
-        <a href="career.html" class="hover:text-white transition">Career</a>
-        <a href="#contact" class="hover:text-white transition">Contact Us</a>
-      </nav>
-
-      <a
-        href="mailto:hello@techtalktitans.co.in"
-        class="hidden md:inline-block px-5 py-2 rounded-full bg-white text-black font-semibold hover:scale-105 transition"
-      >
-        Start Project
-      </a>
-
-    </div>
-  </header>
-
   <!-- HERO -->
 
-  <section class="relative pt-40 pb-32 px-6 z-10">
-
+  <section class="relative pt-32 md:pt-40 pb-20 md:pb-32 px-4 md:px-6 z-10">
+    
     <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
       <div>
@@ -149,7 +120,7 @@
 
       <!-- RIGHT CARD -->
 
-      <div class="glass rounded-[32px] p-8 shadow-2xl">
+      <div class="glass rounded-[32px] p-6 md:p-8 shadow-2xl">
 
         <div class="flex justify-between items-center mb-8">
 
@@ -193,9 +164,9 @@
 
 <!-- ABOUT -->
 
-<section id="about" class="py-28 px-6 relative z-10">
+<section id="about" class="py-20 md:py-28 px-4 md:px-6 relative z-10">
 
-  <div class="max-w-7xl mx-auto glass rounded-[36px] p-10 md:p-16">
+  <div class="max-w-7xl mx-auto glass rounded-[36px] p-6 md:p-16">
 
     <div class="max-w-5xl">
 
@@ -203,7 +174,7 @@
         About Us
       </p>
 
-      <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-10">
+      <h2 class="text-3xl sm:text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-10">
         Empowering Businesses Through
         <span class="gradient-text">Technology & Innovation</span>
       </h2>
@@ -214,7 +185,7 @@
 
       <!-- WHO WE ARE -->
 
-      <div class="glass rounded-3xl p-8 mb-8">
+      <div class="glass rounded-3xl p-6 md:p-8 mb-8">
 
         <h3 class="text-2xl font-bold mb-6">
           🚀 Who We Are
@@ -240,7 +211,7 @@
 
       <!-- WHAT WE OFFER -->
 
-      <div class="glass rounded-3xl p-8 mb-8">
+      <div class="glass rounded-3xl p-6 md:p-8 mb-8">
 
         <h3 class="text-2xl font-bold mb-6">
           💼 What We Offer
@@ -294,7 +265,7 @@
 
       <!-- VISION -->
 
-      <div class="glass rounded-3xl p-8 mb-8">
+      <div class="glass rounded-3xl p-6 md:p-8 mb-8">
 
         <h3 class="text-2xl font-bold mb-6">
           🎯 Our Vision
@@ -308,7 +279,7 @@
 
       <!-- VALUES -->
 
-      <div class="glass rounded-3xl p-8 mb-8">
+      <div class="glass rounded-3xl p-6 md:p-8 mb-8">
 
         <h3 class="text-2xl font-bold mb-6">
           🔐 Our Values
@@ -338,7 +309,7 @@
 
       <!-- CTA -->
 
-      <div class="glass rounded-3xl p-8">
+      <div class="glass rounded-3xl p-6 md:p-8">
 
         <h3 class="text-2xl font-bold mb-6">
           📞 Let’s Build Together
@@ -364,7 +335,7 @@
 </section>
   <!-- PRODUCTS -->
 
-  <section id="products" class="py-28 px-6 relative z-10">
+  <section id="products" class="py-20 md:py-28 px-4 md:px-6 relative z-10">
 
     <div class="max-w-7xl mx-auto">
 
@@ -374,17 +345,17 @@
           Our Products
         </p>
 
-        <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+        <h2 class="text-3xl sm:text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
           SaaS Products Under Tech Talk Titans
         </h2>
 
       </div>
 
-      <div class="grid md:grid-cols-3 gap-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
   <!-- 3T Dial -->
 
-  <div class="glass rounded-[28px] p-8 hover:bg-white/10 transition">
+  <div class="glass rounded-[28px] p-6 md:p-8 hover:bg-white/10 transition">
 
     <div class="flex justify-between items-center mb-8">
       <h3 class="text-2xl font-bold">3T Dial</h3>
@@ -423,7 +394,7 @@
 
   <!-- 3T Mail -->
 
-  <div class="glass rounded-[28px] p-8 hover:bg-white/10 transition">
+  <div class="glass rounded-[28px] p-6 md:p-8 hover:bg-white/10 transition">
 
     <div class="flex justify-between items-center mb-8">
       <h3 class="text-2xl font-bold">3T Mail</h3>
@@ -462,7 +433,7 @@
 
   <!-- 3T eSIM -->
 
-  <div class="glass rounded-[28px] p-8 hover:bg-white/10 transition">
+  <div class="glass rounded-[28px] p-6 md:p-8 hover:bg-white/10 transition">
 
     <div class="flex justify-between items-center mb-8">
       <h3 class="text-2xl font-bold">3T eSIM</h3>
@@ -509,7 +480,7 @@
 
   <!-- SERVICES -->
 
-  <section id="services" class="py-28 px-6 relative z-10">
+  <section id="services" class="py-20 md:py-28 px-4 md:px-6 relative z-10">
 
     <div class="max-w-7xl mx-auto">
 
@@ -519,7 +490,7 @@
           Services
         </p>
 
-        <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
           High-End Software & IT Solutions
         </h2>
 
@@ -556,7 +527,7 @@
 
   <!-- CONTACT SECTION -->
 
-  <section id="contact" class="py-28 px-6 relative z-10">
+  <section id="contact" class="py-20 md:py-28 px-4 md:px-6 relative z-10">
 
     <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
 
@@ -566,7 +537,7 @@
           Contact Us
         </p>
 
-        <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-8">
+        <h2 class="text-3xl sm:text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-8">
           Let’s Build Something Amazing Together
         </h2>
 
@@ -603,7 +574,7 @@
 
       <!-- CALLBACK FORM -->
 
-      <div class="glass rounded-[32px] p-8 md:p-10">
+      <div class="glass rounded-[32px] p-6 md:p-8 md:p-10">
 
         <h3 class="text-3xl font-bold mb-8">
           Get a Call Back
@@ -662,80 +633,25 @@
 
   </section>
 
-  <!-- FOOTER -->
+<div id="footer"></div>
 
-  <footer id="contact" class="border-t border-white/10 bg-slate-950/60 backdrop-blur-xl py-14 px-6 relative z-10">
+<script>
 
-    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+async function loadComponent(id, file) {
 
-      <div>
+  const response = await fetch(file);
 
-        <h3 class="text-2xl font-bold">Tech Talk Titans</h3>
+  const data = await response.text();
 
-        <p class="mt-4 text-white/50 leading-relaxed">
-          SaaS-first technology company building scalable digital products and intelligent software ecosystems.
-        </p>
+  document.getElementById(id).innerHTML = data;
 
-        <div class="mt-6 space-y-4 text-white/60">
+}
 
-          <div>
-            <p class="text-white font-medium">Support</p>
-            <a href="mailto:support@techtalktitans.co.in" class="hover:text-white transition">
-              support@techtalktitans.co.in
-            </a>
-          </div>
+loadComponent("header", "header.html");
 
-          <div>
-            <p class="text-white font-medium">Business & Collaboration</p>
-            <a href="mailto:business@techtalktitans.co.in" class="hover:text-white transition">
-              business@techtalktitans.co.in
-            </a>
-          </div>
+loadComponent("footer", "footer.html");
 
-          <div>
-            <p class="text-white font-medium">Sales & IT Project Offers</p>
-            <a href="mailto:sales@techtalktitans.co.in" class="hover:text-white transition">
-              sales@techtalktitans.co.in
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div>
-
-        <h4 class="font-semibold mb-5">Quick Links</h4>
-
-        <div class="space-y-3 text-white/60">
-          <a href="#about" class="block hover:text-white transition">About Us</a>
-          <a href="#products" class="block hover:text-white transition">Our Products</a>
-          <a href="#services" class="block hover:text-white transition">Services</a>
-          <a href="career.html" class="block hover:text-white transition">Career</a>
-        </div>
-
-      </div>
-
-      <div>
-
-        <h4 class="font-semibold mb-5">Legal</h4>
-
-        <div class="space-y-3 text-white/60">
-          <a href="terms.html" class="block hover:text-white transition">Terms & Conditions</a>
-          <a href="privacy.html" class="block hover:text-white transition">Privacy Policy</a>
-          <a href="refund.html" class="block hover:text-white transition">Refund Policy</a>
-          <a href="availability.html" class="block hover:text-white transition">Service Availability</a>
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="border-t border-white/10 mt-10 pt-6 text-center text-white/40 text-sm">
-      © 2026 Tech Talk Titans. All rights reserved.
-    </div>
-
-  </footer>
-
+</script>
+  
 </body>
 </html>
